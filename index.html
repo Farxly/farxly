@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Farxly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <!-- Musik otomatis -->
+  <audio id="bg-music" loop>
+    <source src="https://files.catbox.moe/k8gbps.mp3" type="audio/mpeg">
+    Browser tidak mendukung audio.
+  </audio>
+
+  <nav class="navbar">
+    <button onclick="scrollToSection('profile')">Profil</button>
+    <button onclick="scrollToSection('projects')">Project</button>
+    <button onclick="scrollToSection('contact')">Kontak</button>
+  </nav>
+
+  <main>
+    <!-- PROFIL -->
+    <section id="profile" class="section">
+      <img src="https://files.catbox.moe/7s0q1k.jpeg" alt="Foto Farxly" class="profile-pic">
+      <h1>Farxly</h1>
+      <p class="dob">Tanggal Lahir: 11 Mei 2011</p>
+      <p class="desc">
+        Yo, gue Farxly. Anak kelas 8, ngulik script dari kecil, suka oprek-oprek terminal, buka port, debug bug, dan ngerusuh dengan cara elegan. 
+        Kadang disebut hacker, kadang disebut dev — terserah lu aja. Yang penting, hasilnya nyata.
+      </p>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="projects" class="section">
+      <h2>Project Pilihan</h2>
+
+      <div class="project">
+        <img src="https://files.catbox.moe/gcd1wo.jpeg" alt="Bot WA">
+        <h3>Script Bot WhatsApp</h3>
+        <p>
+          Bot ini gw bikin buat automasi grup, spam deteksi, welcome message, anti-link, dan banyak fitur lain.
+          Full async, low-latency, dan connect ke banyak instance. Cocok buat bisnis kecil, komunitas, atau cuma iseng aja.
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="https://files.catbox.moe/rwj4gn.jpeg" alt="DDOS Tool">
+        <h3>DDoS Tool</h3>
+        <p>
+          Ini tool gw bikin buat stress test server. Bukan buat rusak, tapi edukasi — belajar gimana sistem tahan serangan.
+          UDP, TCP, HTTP flood semuanya ada. Bisa dijalankan di Android & PC pake terminal. Ringan tapi mematikan.
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="https://files.catbox.moe/c95u9j.jpeg" alt="Game Dev">
+        <h3>Game Developer</h3>
+        <p>
+          Gw juga bikin game. Bukan cuma main, tapi bikin sistem GUI, inventory, map interaktif, bahkan script buat anti-cheat.
+          Game-nya jalan di web & Roblox. Buat yang suka ngoding sambil ngasih fun ke player, lo paham rasanya.
+        </p>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <p>
+        Mau kolab project? Mau sewa bot? Atau cuma mau ngobrol tentang exploit atau script game? Silakan klik tombol di bawah ini. -Farxly
+      </p>
+      <a href="https://wa.me/62881037400856" target="_blank" class="whatsapp-button">Hubungi via WhatsApp</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="background.js"></script>
+</body>
+</html>
